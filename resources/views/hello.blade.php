@@ -269,10 +269,10 @@
                                                     type="submit">
                                                     <span class="btn-caption"><i>HOME, VIEW TABLE, AND FORM</i></span>
                                                 </a> -->
-                                                <h5>WEEK 10 :</h5>
-                                                <a href="/tasks10" class="btn btn-l btn-light link-m-opposite"
+                                                <h5>WEEK 12 :</h5>
+                                                <a href="/auth/login" class="btn btn-l btn-light link-m-opposite"
                                                     type="submit">
-                                                    <span class="btn-caption">LARAVEL 10</span>
+                                                    <span class="btn-caption">LARAVEL 12</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -573,9 +573,9 @@
                     <a href="/tasks9" class="btn btn-l btn-light link-m-opposite" type="submit">
                         <span class="btn-caption"><i>HOME, VIEW TABLE, AND FORM</i></span>
                     </a> -->
-                    <h5>WEEK 10 :</h5>
-                    <a href="/tasks10" class="btn btn-l btn-light link-m-opposite" type="submit">
-                        <span class="btn-caption">LARAVEL 10</span>
+                    <h5>WEEK 12 :</h5>
+                    <a href="/auth/login" class="btn btn-l btn-light link-m-opposite" type="submit">
+                        <span class="btn-caption">LARAVEL 12</span>
                     </a>
                 </div>
                 <!-- Say Hello Form Container End -->

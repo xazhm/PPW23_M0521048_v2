@@ -14,6 +14,7 @@
                         <input class="form-check-input" type="checkbox" id="selectAll" hidden>
                     </th>
                     <th>No</th>
+                    <th>Gambar</th>
                     <th>Nama</th>
                     <th>Email</th>
                     <th>Aksi</th>
@@ -27,10 +28,14 @@
                 <tr>
                     <td>
                         <div class="form-check">
-                            →
+                            <input class="form-check-input" type="checkbox" name="selectedUsers[]"
+                                value="{{ $user->id }}" checked>
                         </div>
                     </td>
                     <td>{{ $counter++ }}</td>
+                    <td>
+                        <img src="{{ asset('storage/images/'.$user->image) }}" alt="User Image" width="50" height="50">
+                    </td>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
                     <td>

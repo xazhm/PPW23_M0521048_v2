@@ -32,15 +32,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    @guest
-                    <!-- Menampilkan link Login -->
-                    <li class="nav-item{{ request()->is('auth/login') ? ' active' : '' }}">
-                        <a class="nav-link" href="{{ route('login') }}">Login</a>
-                    </li>
-                    @else
-                    <!-- Menampilkan link Home, Form, Table, dan Logout -->
                     <li class="nav-item{{ request()->is('home') ? ' active' : '' }}">
-                        <a class="nav-link" href="/home">Home</a>
+                        <a class="nav-link" href="/tasks9">Home</a>
                     </li>
                     <li class="nav-item{{ request()->is('form') ? ' active' : '' }}">
                         <a class="nav-link" href="/form">Form</a>
@@ -48,20 +41,13 @@
                     <li class="nav-item{{ request()->is('table') ? ' active' : '' }}">
                         <a class="nav-link" href="/table">Table</a>
                     </li>
-                    <li class="nav-item">
-                        <form action="{{ route('logout') }}" method="POST">
-                            @csrf
-                            <button type="submit" class="btn btn-link nav-link">Logout</button>
-                        </form>
-                    </li>
-                    @endguest
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Content -->
-    <div class="container mt-4">
+    <div class="container">
         @yield('content')
     </div>
 

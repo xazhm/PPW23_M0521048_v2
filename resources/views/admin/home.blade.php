@@ -4,8 +4,8 @@
 
 <body>
     <div class="container">
-        <h1>Selamat Datang di Halaman Home!</h1>
-        <p>Role Anda: ADMIN</p>
+        <h1>Selamat Datang di Halaman Home</h1>
+        <p>Tugas: Home, View Table, and Form</p>
         <ul class="nav">
             <li class="nav-item"><a href="/form" class="btn btn-primary">Tambah Data</a></li>
         </UL>

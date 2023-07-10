@@ -68,7 +68,7 @@ public function store(Request $request)
     $validatedData = $request->validate([
         'name' => 'required',
         'email' => 'required|email|unique:users,email',
-        'image' => 'required|image|max:2048', // Hanya menerima file gambar dengan ukuran maksimal 2MB
+        'image' => 'required|image|max:2048',
     ]);
 
     // Simpan gambar ke storage
@@ -79,9 +79,18 @@ public function store(Request $request)
     $user = new User;
     $user->name = $validatedData['name'];
     $user->email = $validatedData['email'];
-    $user->image = $imageName; // Simpan nama gambar dalam database
+    $user->image = $imageName; // Assign nilai kolom 'image'
     $user->save();
 
     return redirect('/table')->with('success', 'Data berhasil ditambahkan.');
 }
+
+
+public function view()
+{
+    $users = User::all();
+    return view('view', compact('users'));
+}
+
+
 }

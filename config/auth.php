@@ -36,11 +36,12 @@ return [
     */
 
     'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'users',
-        ],
+    'web' => [
+        'driver' => 'session',
+        'provider' => 'accounts', // Ubah nilai ini menjadi 'accounts'
     ],
+],
+
 
     /*
     |--------------------------------------------------------------------------
@@ -59,17 +60,17 @@ return [
     |
     */
 
-    'providers' => [
-        'users' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\User::class,
-        ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+'providers' => [
+    'users' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\User::class,
     ],
+    'accounts' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\Account::class,
+    ],
+],
+
 
     /*
     |--------------------------------------------------------------------------
